@@ -25,7 +25,7 @@ h3 {
     display: grid;
     gap: 10px;
     grid-template-rows: 200px 200px 245px 200px;
-    grid-template-columns: 1fr 60% 1fr;
+    grid-template-columns: 1fr 548px 1fr;
     height: 100vh;
 }
 
@@ -114,7 +114,6 @@ h3 {
     top: 4px;
     display: block;
     left: -19px;
-    float: left;
     color: #81B73E;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -166,7 +165,7 @@ h3 {
 .cards {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 170px);
     justify-content: center;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -212,6 +211,7 @@ h4 {
 }
 
 .foot {
+    width: 100%;
     position: relative;
     background: url(../img/pexels-suzukii-xingfu-708764.jpg);
     height: 100%;
@@ -227,21 +227,23 @@ h4 {
 }
 
 .foot img {
+    z-index: 2;
     position: absolute;
-    float: right;
     top: 9%;
     right: 6%;
 }
 
-.eot {
+.foot .eot {
     margin-top: 10px;
     color: var(--fontcolor);
     width: 250px;
+    z-index: 2;
 }
 
 .foot h3 {
     position: relative;
     margin-top: 10px;
+    z-index: 2;
 }
 
 .foot h3::after {
@@ -263,6 +265,7 @@ h4 {
     border: none;
     border-radius: 3px;
     margin: 15px 0 20px 0px;
+    z-index: 5;
     font-family: var(--mainfont);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -272,13 +275,12 @@ h4 {
 
 .foot::after {
     isolation: isolate;
-    z-index: -1;
+    z-index: 1;
     height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0;
     background-color: var(--maincolor);
     content: "";
     opacity: 0.8;
