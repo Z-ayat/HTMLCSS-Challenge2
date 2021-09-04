@@ -24,7 +24,7 @@ h3 {
     padding: 20px;
     display: grid;
     gap: 10px;
-    grid-template-rows: 200px 200px 245px 200px;
+    grid-template-rows: 200px 160px 245px 200px;
     grid-template-columns: 1fr 548px 1fr;
     height: 100vh;
 }
